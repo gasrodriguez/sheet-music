@@ -9,6 +9,7 @@
 }
 
 melody = {
+  \mark \default
   \key c \major
   r8 e4 e8 e c d e | f2 g |
   r8 g4 g8 g e f g | a2 b |
@@ -22,6 +23,7 @@ melody = {
   r8 c4 c8 c b b e,| a4 a8 a a g g c, |
   f4 f8 f f e e c  | g'2 r  |
   \break
+  \mark \default
   g8 f' f f f e4 d8 | e8 d4 c8 e,2|
   e'8 d d d d c4 b8 | c b4 a8 c,2 |
   \break
@@ -47,26 +49,62 @@ harmony = \chordmode {
   f1 | c1 | g1:7 | c1 |
 }
 
+
+rhythm = {
+  \arpegio
+  \arpegio
+  \arpegio
+  \arpegio
+
+  \sincopaFalsa
+  \sincopaFalsa
+  \sincopaFalsa
+  \sincopaFalsa
+
+  \sincopaFalsa
+  \sincopaFalsa
+  \sincopaFalsa
+  \sincopaFalsa
+
+  \arpegio
+  \arpegio
+  \arpegio
+  \arpegio
+
+  \blancas
+  \sincopa
+  \sincopa
+  \marcado
+
+  \blancas
+  \sincopa
+  \sincopa
+  \marcado
+
+  \blancas
+  \blancas
+  \blancas
+  \blancas
+}
+
 \score {
-  \new PianoStaff <<
-    \chords {
-      \harmony
-    }
-    \new Staff = "voice" {
-      \easyHeadsOn \relative c'' \melody
-    }
-    \new Staff = "arrange" {
-      \mark \default
-      \repeat unfold 4 \sincopaTierra
-      \repeat unfold 4 \sincopa
-      \repeat unfold 4 \piano
-      \repeat unfold 4 \piano
-      \mark \default
-      \repeat unfold 4 \piano
-      \repeat unfold 4 \piano
-      \repeat unfold 4 \piano
-      \repeat unfold 4 \piano
+  <<
+    \transpose c a
+    <<
+      \chords {
+        \harmony
+      }
+      \new Staff = "voice" {
+        \relative c' {
+          \easyHeadsOn
+          \melody
+        }
+      }
+    >>
+    \new Staff = "rhythm" {
+      \rhythm
     }
   >>
+
   \layout {}
 }

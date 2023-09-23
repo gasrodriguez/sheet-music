@@ -1,3 +1,5 @@
+\version "2.24.2"
+
 #(define Ez_numbers_engraver
    (make-engraver
     (acknowledgers
