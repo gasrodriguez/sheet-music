@@ -5,7 +5,8 @@
   composer = "Cobian / Cadícamo"
 }
 
-\include "../../patterns/tango.ly"
+\include "../include/common.ly"
+\include "../include/tango.ly"
 
 melody = {
   \clef "treble" \time 4/4 \key a \minor | % 1
@@ -91,26 +92,37 @@ harmony = \chordmode  {
   a4:m e4:7 s4 a4:m |
 }
 
-\paper {
-  % system-separator-markup = \slashSeparator
-  % line-width = 120
-}
 \score {
-
   \new PianoStaff <<
     %\transpose cis a
     \chords {
       \harmony
     }
     \new Staff = "voice" {
-      \relative c'' \melody
+      \easyHeadsOn \relative c'' \melody
     }
     \new Staff = "arrange" {
       \mark \default
-      \piano \piano \piano \piano \break
-      \piano \piano \piano \piano \break
-      \piano \piano \piano \piano \break
-      \piano \piano \piano \piano \break
+      \arpegio
+      \arpegio
+      \arpegio
+      \arpegio
+      \break
+      \sincopaFalsa
+      \sincopaFalsa
+      \sincopaFalsa
+      \sincopaFalsa
+      \break
+      \sincopaFalsa
+      \sincopaFalsa
+      \sincopaFalsa
+      \sincopaFalsa
+      \break
+      \arpegio
+      \arpegio
+      \arpegio
+      \arpegio
+      \break
       \mark \default
       \piano \piano \piano \piano \piano \piano \break
       \piano \piano \piano \piano \piano \piano \break
