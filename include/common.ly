@@ -26,4 +26,7 @@
 
 \paper {
   system-separator-markup = \slashSeparator
+  indent = 0
 }
+
+\include "romanChords.ly"
