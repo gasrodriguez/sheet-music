@@ -18,6 +18,15 @@ arpegio = \relative c'' {
   >>
 }
 
+bordoneo = \relative c'' {
+  <<
+    \improvisationOn
+    {r8 g c r g c r g } \\
+    \improvisationOn
+    {c,4. c c4}
+  >>
+}
+
 desmarcado = \relative c'' {
   <<
     \improvisationOn
@@ -32,9 +41,19 @@ marcado = \relative c'' {
     \improvisationOn
     {<g c>4-. q-. q-. q-. } \\
     \improvisationOn
-    {c,4 c c c}
+    {c,4-> c c-> c}
   >>
 }
+
+marcadoDos = \relative c'' {
+  <<
+    \improvisationOn
+    {<g c>4-. r q-. r} \\
+    \improvisationOn
+    {c,4-> \parenthesize c c-> \parenthesize c}
+  >>
+}
+
 
 bajos = \relative c'' {
   <<
@@ -57,7 +76,7 @@ final = \relative c'' {
     \improvisationOn
     {<g c>4-. <g b>4-. <g c>4-. r } \\
     \improvisationOn
-    {c,4 g c r}
+    {c,4 g-> c r}
   >>
 }
 
@@ -79,26 +98,52 @@ blancaMarcado = \relative c'' {
   >>
 }
 
-marcadoDos = \relative c'' {
-  <<
-    \improvisationOn
-    {<g c>4-. q-. q-. q-. } \\
-    \improvisationOn
-    {c,4-> c c-> c}
-  >>
-}
-
 sincopa = \relative c'' {
   <<
     \improvisationOn
-    {r8 <g c>4. <g c>4 r } \\
+    {\parenthesize <g c>8 <g c>-> r4 <g c>4-> s } \\
     \improvisationOn
     {
       \once \override Glissando.springs-and-rods
       = #ly:spanner::set-spacing-rods
       \once \override Glissando.minimum-length = #4
       \once \hideNotes
-      \grace g, \glissando c4. \parenthesize c8 c4 r
+      \grace g, \glissando c8 s4 \parenthesize c8 c4 r
+    }
+  >>
+}
+
+sincopaDoble = \relative c'' {
+  <<
+    \improvisationOn
+    {\parenthesize <g c>8 <g c>-> s4 \parenthesize <g c>8 <g c>-> s4 } \\
+    \improvisationOn
+    {
+      \once \override Glissando.springs-and-rods
+      = #ly:spanner::set-spacing-rods
+      \once \override Glissando.minimum-length = #4
+      \once \hideNotes
+      \grace g, \glissando c8 s8 r4
+      \once \override Glissando.springs-and-rods
+      = #ly:spanner::set-spacing-rods
+      \once \override Glissando.minimum-length = #4
+      \once \hideNotes
+      \grace g \glissando c8 r4
+    }
+  >>
+}
+
+sincopaTierra = \relative c'' {
+  <<
+    \improvisationOn
+    {<g c>8-> <g c> r4 <g c>4 s } \\
+    \improvisationOn
+    {
+      \once \override Glissando.springs-and-rods
+      = #ly:spanner::set-spacing-rods
+      \once \override Glissando.minimum-length = #4
+      \once \hideNotes
+      \grace g, \glissando c8 s4 c8 r2
     }
   >>
 }
@@ -114,21 +159,6 @@ sincopaMarcado = \relative c'' {
       \once \override Glissando.minimum-length = #4
       \once \hideNotes
       \grace g, \glissando c4. \parenthesize c8 c4 c
-    }
-  >>
-}
-
-sincopaTierra = \relative c'' {
-  <<
-    \improvisationOn
-    {<g c>8 <g c>8 r4 <g c>4 r } \\
-    \improvisationOn
-    {
-      \once \override Glissando.springs-and-rods
-      = #ly:spanner::set-spacing-rods
-      \once \override Glissando.minimum-length = #4
-      \once \hideNotes
-      \grace g, \glissando c8 c r \parenthesize c c4 r
     }
   >>
 }

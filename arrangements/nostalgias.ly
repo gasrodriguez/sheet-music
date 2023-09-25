@@ -69,6 +69,7 @@ melody = {
 }
 
 harmony = \chordmode  {
+  \key a \minor
   | % 1
   a2:m a2:m/+gis | % 2
   a2:m/+g a2:m/+fis | % 3
@@ -159,21 +160,20 @@ rhythm = {
 
 \score {
   <<
-    \transpose cis a
-    <<
-      \chords {
-        \harmony
+    % \transpose c a
+    \new Staff = "voice" {
+      \stemUp
+      \relative c'' {
+        \easyHeadsOn
+        \melody
       }
-      \new Staff = "voice" {
-        \relative c'' {
-          \easyHeadsOn
-          \melody
-        }
-      }
-    >>
-    \new Staff = "rhythm" {
-      \rhythm
     }
+    \new ChordNames \harmony
+    \new Staff \rhythm
+    \new ChordNames \with {
+      \consists "Key_engraver"
+      \consists #roman-chord-engraver
+    } \harmony
   >>
 
   \layout {}

@@ -84,16 +84,6 @@ rhythm = {
   \blancaMarcado
   \final
 }
-\layout {
-  \context {
-    \Staff
-    \override VerticalAxisGroup.default-staff-staff-spacing =
-      #'((basic-distance . 20)
-         (minimum-distance . 10)
-         (padding . 1))
-  }
-}
-
 
 \score {
   <<
