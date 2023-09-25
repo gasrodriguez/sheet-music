@@ -37,3 +37,4 @@
 }
 
 \include "romanChords.ly"
+\include "alphaTab.ly"

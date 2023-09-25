@@ -95,8 +95,18 @@ rhythm = {
         \melody
       }
     }
+
+    \new TabStaff {
+      \tabFullNotation
+      \relative c' {
+        \melody
+      }
+    }
+
     \new ChordNames \harmony
+
     \new Staff \rhythm
+
     \new ChordNames \with {
       \consists "Key_engraver"
       \consists #roman-chord-engraver
