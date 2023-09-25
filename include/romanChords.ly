@@ -74,7 +74,7 @@
               (minor? (equal? scale minor)))
           (ly:grob-set-property! grob 'stencil
                                  (grob-interpret-markup grob
-                                                        (markup #:box #:concat (root-name (if minor? "-" ""))))))))
+                                                        (markup #:box #:concat (root-name (if minor? " min" " maj"))))))))
       (listeners
        ((key-change-event engraver event)
         (let* ((pitch-alist (ly:event-property event 'pitch-alist))
@@ -86,5 +86,3 @@
           (set! root tonic-pitch)
           (set! (ly:context-property context 'chordRootNamer)
                 note-name->international-markup)))))))
-
-
