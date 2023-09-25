@@ -9,6 +9,8 @@
 }
 
 melody = {
+  \key g \major |
+
   d2 fis4. e8 |
   e2 r |
   r8 d e d fis e4 fis8 |
@@ -60,6 +62,8 @@ harmony = \chordmode {
 
 
 rhythm = {
+  \key g \major |
+
   \blancas
   \blancas
   \blancas
@@ -77,7 +81,7 @@ rhythm = {
 
   \marcadoDos
   \marcadoDos
-  \marcadoDos
+  \blancaMarcado
   \final
 }
 \layout {
@@ -95,6 +99,7 @@ rhythm = {
   <<
     % \transpose c a
     \new Staff = "voice" {
+      \stemUp
       \relative c'' {
         \easyHeadsOn
         \melody
