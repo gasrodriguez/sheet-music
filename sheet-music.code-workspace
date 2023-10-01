@@ -1,9 +1,11 @@
 {
 	"folders": [
 		{
+			"name": "sheet-music",
 			"path": "."
 		},
 		{
+			"name": "lilypond",
 			"path": "../lilypond"
 		}
 	],

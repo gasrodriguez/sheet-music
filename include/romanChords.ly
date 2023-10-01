@@ -6,7 +6,7 @@
               markup))
        markup))
 
-#(define-public (alteration->text-accidental-markup alteration)
+#(define (alteration->text-accidental-markup alteration)
    (make-smaller-markup
     (make-raise-markup
      (if (= alteration FLAT)
@@ -28,7 +28,7 @@
        (string-downcase str)
        str))
 
-#(define-public (note-name->string pitch lowercase?)
+#(define (note-name->markup pitch lowercase?)
    "Return pitch markup for @var{pitch}."
    (make-concat-markup
     (list
@@ -70,7 +70,7 @@
      (make-engraver
       (acknowledgers
        ((key-signature-interface engraver grob source-engraver)
-        (let ((root-name (note-name->string root #f))
+        (let ((root-name (note-name->markup root #f))
               (minor? (equal? scale minor)))
           (ly:grob-set-property! grob 'stencil
                                  (grob-interpret-markup grob
@@ -86,3 +86,13 @@
           (set! root tonic-pitch)
           (set! (ly:context-property context 'chordRootNamer)
                 note-name->international-markup)))))))
+
+\layout {
+  \context {
+    \ChordNames
+    \name RomanChordNames
+    \consists "Key_engraver"
+    \consists #roman-chord-engraver
+  }
+  \inherit-acceptability RomanChordNames ChordNames
+}

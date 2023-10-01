@@ -9,7 +9,7 @@
 }
 
 melody = {
-  \key g \major |
+\key g \major |
 
   d2 fis4. e8 |
   e2 r |
@@ -96,21 +96,18 @@ rhythm = {
       }
     }
 
-    \new TabStaff {
-      \tabFullNotation
+    \new AlphaTab {
       \relative c' {
         \melody
       }
     }
 
+    \new NoteNames \melody
     \new ChordNames \harmony
 
     \new Staff \rhythm
 
-    \new ChordNames \with {
-      \consists "Key_engraver"
-      \consists #roman-chord-engraver
-    } \harmony
+    \new RomanChordNames \harmony
   >>
 
   \layout {}
