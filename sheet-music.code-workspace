@@ -13,7 +13,9 @@
 		"git.ignoredRepositories": [
 			"../lilypond",
 		],
-		"workbench.colorCustomizations": {}
+		"workbench.colorCustomizations": {},
+		"vslilypond.compilation.compileMainFileOnSave": false,
+		"vslilypond.compilation.compileOnSave": false
 	},
 	"extensions": {
 		"recommendations": [

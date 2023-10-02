@@ -12,6 +12,14 @@
   indent = 0
 }
 
+\layout {
+  \context {
+    \Staff
+    \clef "G_8"
+  }
+}
+
 \include "romanChords.ly"
 \include "alphaTab.ly"
 \include "noteGrades.ly"
+\include "chords.ly"
