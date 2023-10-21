@@ -45,6 +45,6 @@ exercise = \chordmode {
 <<
 % \new Staff \exercise
 \new ChordNames \exercise
+\new FretBoards \exercise
 \new AlphaTab \exercise
-% \new TabStaff \exercise
 >>

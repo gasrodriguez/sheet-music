@@ -16,8 +16,7 @@
 
 \layout {
   \context {
-    \NoteNames
-    % \easyHeadsOn
+    \Voice
     \consists \Ez_numbers_engraver
   }
 }

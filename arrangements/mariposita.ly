@@ -90,19 +90,19 @@ rhythm = {
     % \transpose c a
     \new Staff = "voice" {
       \stemUp
-      \relative c'' {
+      \relative c' {
         \easyHeadsOn
         \melody
       }
     }
 
-    \new AlphaTab {
-      \relative c' {
-        \melody
-      }
-    }
+    % \new AlphaTab {
+    %   \relative c' {
+    %     \melody
+    %   }
+    % }
 
-    \new NoteNames \melody
+    % \new NoteNames \melody
     \new ChordNames \harmony
 
     \new Staff \rhythm
