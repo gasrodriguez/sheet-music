@@ -1,6 +1,6 @@
 \version "2.24.2"
 
-piano = \relative c'' {
+piano = \relative c' {
   <<
     \improvisationOn
     {r4 c r c} \\
@@ -9,7 +9,7 @@ piano = \relative c'' {
   >>
 }
 
-arpegio = \relative c'' {
+arpegio = \relative c' {
   <<
     \improvisationOn
     {r8 g c g r8 g c g } \\
@@ -18,7 +18,7 @@ arpegio = \relative c'' {
   >>
 }
 
-bordoneo = \relative c'' {
+bordoneo = \relative c' {
   <<
     \improvisationOn
     {r8 g c r g c r g } \\
@@ -27,7 +27,7 @@ bordoneo = \relative c'' {
   >>
 }
 
-desmarcado = \relative c'' {
+desmarcado = \relative c' {
   <<
     \improvisationOn
     {r8 <g c>4. r8 <g c>4. } \\
@@ -36,7 +36,7 @@ desmarcado = \relative c'' {
   >>
 }
 
-marcado = \relative c'' {
+marcado = \relative c' {
   <<
     \improvisationOn
     {<g c>4-. q-. q-. q-. } \\
@@ -45,7 +45,7 @@ marcado = \relative c'' {
   >>
 }
 
-marcadoDos = \relative c'' {
+marcadoDos = \relative c' {
   <<
     \improvisationOn
     {<g c>4-. r q-. r} \\
@@ -55,14 +55,14 @@ marcadoDos = \relative c'' {
 }
 
 
-bajos = \relative c'' {
+bajos = \relative c' {
   <<
     \improvisationOn
     {c,4 c c c}
   >>
 }
 
-marcadoSincopa = \relative c'' {
+marcadoSincopa = \relative c' {
   <<
     \improvisationOn
     {<g c>4-. q-. q-. r } \\
@@ -71,7 +71,7 @@ marcadoSincopa = \relative c'' {
   >>
 }
 
-final = \relative c'' {
+final = \relative c' {
   <<
     \improvisationOn
     {<g c>4-. <g b>4-. <g c>4-. r } \\
@@ -80,7 +80,7 @@ final = \relative c'' {
   >>
 }
 
-blancas = \relative c'' {
+blancas = \relative c' {
   <<
     \improvisationOn
     {<g c>2 q} \\
@@ -89,7 +89,7 @@ blancas = \relative c'' {
   >>
 }
 
-blancaMarcado = \relative c'' {
+blancaMarcado = \relative c' {
   <<
     \improvisationOn
     {<g c>2 <g c>4 q } \\
@@ -98,7 +98,7 @@ blancaMarcado = \relative c'' {
   >>
 }
 
-sincopa = \relative c'' {
+sincopa = \relative c' {
   <<
     \improvisationOn
     {\parenthesize <g c>8 <g c>-> r4 <g c>4-> s } \\
@@ -113,7 +113,7 @@ sincopa = \relative c'' {
   >>
 }
 
-sincopaDoble = \relative c'' {
+sincopaDoble = \relative c' {
   <<
     \improvisationOn
     {\parenthesize <g c>8 <g c>-> s4 \parenthesize <g c>8 <g c>-> s4 } \\
@@ -133,7 +133,7 @@ sincopaDoble = \relative c'' {
   >>
 }
 
-sincopaTierra = \relative c'' {
+sincopaTierra = \relative c' {
   <<
     \improvisationOn
     {<g c>8-> <g c> r4 <g c>4 s } \\
@@ -148,7 +148,7 @@ sincopaTierra = \relative c'' {
   >>
 }
 
-sincopaMarcado = \relative c'' {
+sincopaMarcado = \relative c' {
   <<
     \improvisationOn
     {r8 <g c>4. <g c>4 q } \\
@@ -163,7 +163,7 @@ sincopaMarcado = \relative c'' {
   >>
 }
 
-sincopaFalsa = \relative c'' {
+sincopaFalsa = \relative c' {
   <<
     \improvisationOn
     {r8 <g c>4. <g c>4 r } \\
