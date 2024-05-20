@@ -11,7 +11,6 @@
 	     (delta (modulo (- grob-name tonic-name) 7))
 	     (note-names
 	      (make-vector 7 (number->string (1+ delta)))))
-	(display tonic-name)(newline)
   (ly:grob-set-property! grob 'note-names note-names))))))
 
 \layout {
