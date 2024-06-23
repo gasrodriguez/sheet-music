@@ -26,14 +26,15 @@ melody = {
 
   % Bar 2
   s2. |
-  fis2. |
+  fis2.|
 
   s2. |
   \tuplet 3/2 {<d, a' d fis>16\arpeggio (g' fis)} d a c8 d d d,~|
 
   s2. |
-  d2. |
+  d2.  \fermata |
 
+  \break
   a'8 d d d a d|
   s2. |
 
@@ -43,6 +44,7 @@ melody = {
   a'8 fis a a fis d|
   s2. |
 
+  \break
   d2. |
   s2. |
 
@@ -55,6 +57,7 @@ melody = {
   s2. |
   d2. |
 
+  \break
   a'8. a16 a8 a fis a|
   s2. |
 
@@ -67,6 +70,7 @@ melody = {
   4. \tuplet 2/3 {fis8 d}|
   s2. |
 
+  \break
   d2. |
   s2. |
 
@@ -82,6 +86,7 @@ melody = {
   s2. |
   d2. |
 
+  \break
   b8. e16 e8 e b e|
   <e, b' e>2.~ |
 
@@ -94,6 +99,7 @@ melody = {
   fis8 r r2 |
   r8 \harmonicsOn b <cis a'>2 \fermata \harmonicsOff |
 
+  \break
   a8. a16 a8 b8. a16 g8 |
   s2. |
 
@@ -106,6 +112,7 @@ melody = {
   d8 r4 r4. |
   s2. |
 
+  \break
   a'8. a16 a8 b8. a16 g8 |
   d,8 a' d r a d |
 
@@ -115,7 +122,8 @@ melody = {
   fis8 b,16 fis' fis8 e b16 e e8|
   r8 a d r a d |
 
-  d16 fis, g (fis) d a c d fis d d fis|
+  \break
+  d8 g,16 (fis) d a c d fis d d fis|
   s2. |
 
   r16 fis g (fis) d a c d fis fis, d' fis|
@@ -139,6 +147,7 @@ melody = {
   r16 fis g (fis) d a c d fis d d fis|
   d2. |
 
+  \break
   a8. d8 d16 d8. a8 d16 |
   d8 a' d r a d |
 
@@ -151,6 +160,7 @@ melody = {
   d16 fis,  g (fis) d a c d fis d d fis|
   d,2. |
 
+  \break
   a'8. fis16 a8 a8. fis16 a8 |
   r8 a' d r a d |
 
@@ -163,6 +173,7 @@ melody = {
   d16 fis,  g (fis) d a c d fis d d fis|
   d,2. |
 
+  \break
   b8. e8 e16 e8. b8 e16 |
   r8 <e b' e>8 8 r <e b' e>8 8 |
 
@@ -172,9 +183,10 @@ melody = {
   e8. e8 e16 e8. fis8 g16 |
   r8 <g d' g>8 8 r <g d' g>8 8 |
 
-  fis4.  r |
+  fis8  r4 r4. |
   r8 <g d' g>16  <a d a'> a a'  a, a'  a, a'  a, a'|
 
+  \break
   a8. a16 a8 b8. a16 g8 |
   d,,8 a' d r a d |
 
@@ -187,6 +199,7 @@ melody = {
   d16 fis,  g (fis) d a c d fis d d fis|
   d,2. |
 
+  \break
   a'8. a16 a8 b8. a16 g8 |
   d8 a' d r a d |
 
@@ -211,6 +224,7 @@ melody = {
   r16 g aes (g) ees bes des ees g c, ees g|
   ees2. |
 
+  \break
   \harmonicsOn d8. g8 g16 g8. d8 g16 |
   r8 d8 8 r d8 8 |
 
@@ -244,6 +258,7 @@ melody = {
   aes'16 (g) ees bes aes'16 (g) ees ees ees8 ees  |
   <ees bes' ees>4 <ees bes' ees> r|
 
+  \break
   \time 6/8
   d8 d' d d a d |
   r4. <d' fis>|
@@ -266,6 +281,7 @@ melody = {
   \xNote {fis4. d }  |
   r8 <d, a' d >16 16 16 16 r8 <a' e' a>8  <g d' g>8 |
 
+  \break
   a'8 a16 a a a a8 fis a    |
   r8 <d a' d >16 16 16 16 r8 <a'  e' a>8  8 |
 
@@ -278,6 +294,7 @@ melody = {
   d4. \xNote {d8} b4 |
   r8 <d a' d >16 16 16 16 r8 <e b' e>4 |
 
+  \break
   b8. b16 e8 e8. b16 e8  |
   r8. <e b' e>16 8 r8. 16 8  |
 
@@ -290,6 +307,7 @@ melody = {
   fis8 \xNote {fis16 16} \harmonicsOn fis2 \fermata \harmonicsOff |
   r4                     \harmonicsOn <a, e' a>2 \harmonicsOff |
 
+  \break
   a8 a16 a a a b8 a g    |
   r8 <d a' d >16 16 16 16 r8 <a'  e' a>8  8 |
 
@@ -302,6 +320,7 @@ melody = {
   d4. \xNote {d8} d d |
   r8 <d a' d >16 16 16 16 r8 <f c' f>8 8 |
 
+  \break
   a'8 a16 a a a b8 a g    |
   r8 <d a' d >16 16 16 16 r8 <a'  e' a>8  8 |
 
@@ -314,6 +333,7 @@ melody = {
   d4. \xNote {d8} e e |
   r8 <d a' d >16 16 16 16 r8 <g d' g>8 8 |
 
+  \break
   a8 a16 a a a a8 fis a    |
   r8 <d a' d >16 16 16 16 r8 <a'  e' a>8  8 |
 
@@ -344,6 +364,7 @@ melody = {
   fis16 fis fis f f f e e e ees ees ees |
   <fis cis' fis >16 16 16 <f c' f >16 16 16 <e b' e >16 16 16 <ees bes' ees >16 16 16|
 
+  \break
   a 8 a16 a a a a8 fis a    |
   r8 <d a' d >16 16 16 16 r8 <a'  e' a>8  8 |
 
@@ -356,6 +377,7 @@ melody = {
   d4. \xNote {d8} b4 |
   r8 <d a' d >16 16 16 16 r8 <e b' e>4 |
 
+  \break
   b8. b16 e8 e8. b16 e8  |
   r8. <e b' e>16 8 r8. 16 8  |
 
@@ -368,6 +390,7 @@ melody = {
   fis8 \xNote {fis16 16} \harmonicsOn fis2 \fermata \harmonicsOff |
   r4                     \harmonicsOn <a, e' a>2 \harmonicsOff |
 
+  \break
   a8 a16 a a a b8 a g    |
   r8 <d a' d >16 16 16 16 r8 <a'  e' a>8  8 |
 
@@ -380,6 +403,7 @@ melody = {
   d4. \xNote {d8} fis fis |
   r8 <d a' d >16 16 16 16 r8 <a' e' a>8 8 |
 
+  \break
   a8 a16 a a a b8 a g    |
   r8 <d, a' d >16 16 16 16 r8 <a'  e' a>8  8 |
 
@@ -389,12 +413,40 @@ melody = {
   fis8 b,16 b fis'8  e8 b e8    |
   r8 <d, a' d >16 16 16 16 r8 <g  d' g>8  8 |
 
+  d8 d16 d fis8  e8 b d8    |
+  r8 <d a' d >16 16 16 16 r8 <f  c' f>8  8 |
+
   d8 d16 d fis8  e8 b e8    |
   r8 <d a' d >16 16 16 16 r8 <g  d' g>8  8 |
 
-  d4. \xNote {d8} fis fis |
-  r8 <d a' d >16 16 16 16 r8 <a' e' a>8 8 |
+  d16 d d d d d d8 d16 d8.     |
+  r8 <f c' f >16 16 16 16 r8 16  8. |
 
+  d16 d d d d d d8 d16 d8.     |
+  r8 <e b' e  >16 16 16 16 r8 16  8. |
+
+  d16 d d d d d d8 d16 d16 d16 d16     |
+  r8 <ees bes' ees >16 16 16 16 r8 16  16 16 16|
+
+  \time 4/4
+  d8 d16 d d8 d16 d d8 d16 d16 d8 d    |
+  r8 <ees bes' ees>16 16 8 16 16 8 16  16 8 <d a' d >8|
+
+  \break
+  \time 6/8
+  a'8 a16 a a a a8 fis a    |
+  r8 <d a' d >16 16 16 16 r8 <a'  e' a>8  8 |
+
+  a4.  fis    |
+  r8 <d, a' d >16 16 16 16 r8 <a'  e' a>8  8 |
+
+  \time 9/8
+  a8 fis16 a a a a8 fis e  \xNote {16 16 16 16 16 16}  |
+  r8 <d, a' d >16 16 16 16 r8 <a' e' a>8  <g d' g>8 \xNote {16 16 16 16 16 16}|
+
+  \time 6/8
+  d2. \fermata|
+  <d a' d fis >2.|
 }
 
   \score {
