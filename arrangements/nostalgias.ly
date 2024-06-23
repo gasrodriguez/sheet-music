@@ -114,7 +114,7 @@ harmony = \chordmode  {
 rhythm = {
   \arpegio
   \arpegio
-  \arpegio
+  \blancas
   \arpegio
 
   \sincopaFalsa
