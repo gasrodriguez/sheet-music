@@ -22,7 +22,7 @@ melody = {
   \time 6/8
   % Bar 1
   s2. |
-  <d, a' d fis>16\arpeggio g' fis d a8 d fis4~|
+  <d, a' d fis>16\arpeggio (g' fis) d a8 d fis4~|
 
   % Bar 2
   s2. |
@@ -44,7 +44,6 @@ melody = {
   a'8 fis a a fis d|
   s2. |
 
-  \break
   d2. |
   s2. |
 
@@ -70,7 +69,6 @@ melody = {
   4. \tuplet 2/3 {fis8 d}|
   s2. |
 
-  \break
   d2. |
   s2. |
 
@@ -81,7 +79,7 @@ melody = {
   <d, d' fis>16\arpeggio g' fis d a8 d d c|
 
   s2. |
-  b16 c b c b8 d8 4~|
+  b16 (c b c b8) d8 4~|
 
   s2. |
   d2. |
