@@ -68,14 +68,14 @@
   a'4 4 4 4 |
 
   \break
-  16 f' 8 a,16 ~ 16 d8 f16 a8 f16 d16~16 a'8 <c, e a>16~ |
+  16 f' 8 a,16 ~ 16 d8 f16 a8 f16 d16~16 a'8 c,16~ |
   d,4 4 4 4 |
 
-  16 c8 e16  <c e c'>8 c16 e  <c e b'>8 c16 <c e a>16~ 16 <c e c'>8 f'16\glissando |
+  16 a'8 e16  c'8 e,16 b'16~8  e,16 a16 ~ 16 c8 f16\glissando |
   a'4 4 4 4 |
 
   \break
-  16 f8 f,16~ 16 a8 d16 e8 a,16 f'~ 16  e8 e16~ |
+  16 f,8 a16~16 d8 a16 e'8 a,16 f'~ 16  e8 e16~ |
   d,4 4 4 4 |
 
   16 c8 d16 b8 c8 a8 bes16 a16~ 16  g8 f16~  |
